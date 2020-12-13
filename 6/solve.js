@@ -17,7 +17,7 @@ const solve2 = (input) => {
       if (i === 0) {
         agree = new Set(personAnswers);
       }
-      let nextPerson = new Set(personAnswers);
+      const nextPerson = new Set(personAnswers);
       agree.forEach(answer => {
         if (!nextPerson.has(answer)) {
           agree.delete(answer);

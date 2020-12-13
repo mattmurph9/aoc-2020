@@ -1,5 +1,5 @@
 const solve1 = (input) => {
-  const expenses = input.map(expense => parseInt(expense));
+  const expenses = input.map((expense) => parseInt(expense));
   expenses.sort((a, b) => a - b);
   let solution;
   let i = 0;
@@ -15,10 +15,10 @@ const solve1 = (input) => {
     }
   }
   return solution;
-}
+};
 
 const solve2 = (input) => {
-  const expenses = input.map(expense => parseInt(expense));
+  const expenses = input.map((expense) => parseInt(expense));
   expenses.sort((a, b) => a - b);
   let solution;
   let i = 0;
@@ -41,6 +41,6 @@ const solve2 = (input) => {
     i++;
   }
   return solution;
-}
+};
 
 module.exports = { solve1, solve2 };
